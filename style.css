@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+}body{
+    background-color: coral;
+}input,textarea{
+    width:100%;
+padding: 10px;
+border: none;
+outline: none;
+border-bottom:  1px solid rgb(54, 45, 45);
+box-sizing: border-box;
+resize: none;
+}
+
+input[type="text"]:focus,textarea:focus{
+    border-bottom: 2px solid rgb(232, 83, 183);
+   
+} /*send message button*/
+.sm{
+    background-color: green;
+    color:white;
+    padding: 10px 20px;
+}
+label{
+    display: block;
+}
+.error{
+    color:rgb(0, 0, 0);
+}#success{
+    color:green;
+}overlay{
+    height: 100vh;
+    width: 100px;
+    position: fixed;
+}form{
+    width: 80%;
+    background-color: white;
+    margin: 20vh  auto 0 auto;
+    padding: 40px;
+    box-sizing: border-box; 
+}

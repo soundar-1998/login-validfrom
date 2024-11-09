@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+   
+</head>
+<body>
+    <div id="overlay">
+       <form onSubmit="ValidateForm(); event.preventDefault();">
+        <h1>contact us</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="YourName">
+        <small class="error"></small>
+        
+<!--name cannot be blank-->
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="your email">
+        <small class="error"></small>
+<!-- invalid email-->
+        <label for="message">Messages:</label>
+        <input id="message" placeholder="your Message"></input>
+        <small class="error"></small>
+        <!-- message cannot be blank-->
+
+        <br>
+        <br>
+        <div>
+<input type="submit"
+value="send message" 
+class="sm">
+<!--<button>send message</button>-->
+        </div>
+        <br>
+        <p id="success">
+        <!--form  validation successfull-->
+    </p>
+       </form> 
+    </div>
+    <script src="index.js"> </script>
+
+</body>
+</html>
